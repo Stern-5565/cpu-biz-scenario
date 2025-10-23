@@ -68,7 +68,7 @@ select
 from dbo.DPcampDB d;
 
 
--- Population overview: Alive vs Deceased...
+-- Population overview: Alive vs Deceased.
 select 
     Status = case when d.IsAlive = 1 then 'Alive' else 'Deceased' end,
     TotalPeople = count(*)
